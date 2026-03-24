@@ -5,16 +5,23 @@
 [![GitHub issues](https://img.shields.io/github/issues/Zer0G0ld/DataCraft.svg)](https://github.com/Zer0G0ld/DataCraft/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Zer0G0ld/DataCraft.svg)](https://github.com/Zer0G0ld/DataCraft/commits/main)
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-
-> **DataCraft** é uma ferramenta desktop elegante e poderosa para converter arquivos XML em planilhas Excel. Com uma interface intuitiva e processamento otimizado, você transforma dados complexos em informações valiosas em segundos!
-
 [![Python](https://img.shields.io/badge/Python-3.14+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/Zer0G0ld/DataCraft)
+[![License](https://img.shields.io/badge/License-GPLv3-green.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
 [![Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://microsoft.com/windows)
 [![Downloads](https://img.shields.io/github/downloads/Zer0G0ld/DataCraft/total.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
 
+> **DataCraft** é uma ferramenta desktop elegante e poderosa para converter arquivos XML em planilhas Excel. Com uma interface intuitiva e processamento otimizado, você transforma dados complexos em informações valiosas em segundos!
+
 ![DataCraft Screenshot](img/DataCraft.PNG)
+
+## 📦 Download Rápido
+
+👉 **[Baixar DataCraft v1.0.0 para Windows](https://github.com/Zer0G0ld/DataCraft/releases/download/v1.0.0/DataCraft.exe)**
+
+*Sem instalação necessária! Basta baixar e executar.*
+
+---
 
 ## ✨ Características
 
@@ -121,8 +128,10 @@ DataCraft/
 ├── requirements.txt       # Dependências Python
 ├── voto.ico              # Ícone do aplicativo
 ├── README.md             # Documentação
-├── LICENSE               # Licença MIT
-└── .gitignore            # Arquivos ignorados
+├── LICENSE               # Licença GPLv3
+├── .gitignore            # Arquivos ignorados
+└── img/
+    └── DataCraft.PNG     # Screenshot do aplicativo
 ```
 
 ### Compilando do Zero
@@ -156,12 +165,14 @@ tzdata==2025.3
 - [ ] Modo batch (múltiplos arquivos)
 - [ ] Temas claro/escuro
 - [ ] Gráficos integrados
+- [ ] Barra de progresso mais detalhada
 
 ### Versão 2.0 (Planejado)
 - [ ] Exportação para múltiplos formatos
 - [ ] Transformações customizadas
 - [ ] API para integração
 - [ ] Versão web
+- [ ] Dashboard com estatísticas visuais
 
 ## 🤝 Contribuindo
 
@@ -171,7 +182,7 @@ Contribuições são sempre bem-vindas!
 2. **Crie sua branch** (`git checkout -b feature/AmazingFeature`)
 3. **Commit suas mudanças** (`git commit -m 'Add some AmazingFeature'`)
 4. **Push para a branch** (`git push origin feature/AmazingFeature`)
-5. **Abra um Pull Request**
+5. **Abra um Pull Request`
 
 ### Reportar Bugs
 Encontrou um bug? Abra uma [issue](https://github.com/Zer0G0ld/DataCraft/issues) com:
@@ -179,10 +190,11 @@ Encontrou um bug? Abra uma [issue](https://github.com/Zer0G0ld/DataCraft/issues)
 - Passos para reproduzir
 - Sistema operacional
 - Screenshots (se aplicável)
+- Versão do DataCraft
 
 ## 📄 Licença
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+Distribuído sob a licença **GNU General Public License v3.0**. Veja `LICENSE` para mais informações.
 
 ## 📧 Contato
 
@@ -194,15 +206,16 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 - Python Community
 - Pandas Team
 - OpenPyXL Developers
-- Todos os contribuidores
+- Todos os contribuidores e usuários
 
 ---
 
 ## ⭐ Mostre seu apoio!
 
-Se este projeto te ajudou, dê uma ⭐ no GitHub! Isso me motiva a continuar melhorando.
+Se este projeto te ajudou:
+- ⭐ Dê uma estrela no GitHub
+- 🍴 Faça um fork
+- 📢 Compartilhe com amigos
+- 🐛 Reporte bugs encontrados
 
 **Feito com 💛 por [Zer0G0ld](https://github.com/Zer0G0ld)**
-
-## 📝 **LICENSE (GNU3)**
-[GNU3](LICENSE)
