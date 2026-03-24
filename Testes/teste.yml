@@ -1,0 +1,46 @@
+# Configuração do Sistema
+system:
+  name: "DataCraft Test"
+  version: "1.0.0"
+  environment: "development"
+
+# Lista de servidores
+servers:
+  - name: "web-server-01"
+    ip: "192.168.1.10"
+    status: "active"
+    tags:
+      - "production"
+      - "web"
+    config:
+      cpu: 4
+      memory: 8192
+      mac: "DE:AD:BE:EF:CA:FE"
+  
+  - name: "db-server-01"
+    ip: "192.168.1.20"
+    status: "active"
+    tags:
+      - "production"
+      - "database"
+    config:
+      cpu: 8
+      memory: 16384
+      mac: "BA:BE:CA:FE:12:34"
+  
+  - name: "cache-server-01"
+    ip: "192.168.1.30"
+    status: "standby"
+    tags:
+      - "staging"
+      - "cache"
+    config:
+      cpu: 2
+      memory: 4096
+      mac: "56:78:90:AB:CD:EF"
+
+# Métricas
+metrics:
+  total_servers: 3
+  active_servers: 2
+  uptime_percentage: 99.95

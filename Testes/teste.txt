@@ -1,0 +1,11 @@
+Timestamp,Level,Message,User,IP,MacAddress
+2024-01-15 10:30:45,INFO,Login successful,joao.santos,192.168.1.100,AA:BB:CC:DD:EE:FF
+2024-01-15 10:31:12,INFO,Login successful,maria.oliveira,192.168.1.101,11:22:33:44:55:66
+2024-01-15 10:32:05,WARNING,Failed login attempt,unknown,192.168.1.200,
+2024-01-15 10:33:20,ERROR,Database connection timeout,roberto.alves,192.168.1.102,DD:EE:FF:00:11:22
+2024-01-15 10:35:00,INFO,File uploaded,fernanda.lima,192.168.1.103,33:44:55:66:77:88
+2024-01-15 10:36:45,INFO,Report generated,pedro.costa,192.168.1.104,77:88:99:AA:BB:CC
+2024-01-15 10:38:30,WARNING,High memory usage,system,192.168.1.10,
+2024-01-15 10:40:15,INFO,Backup completed,carla.mendes,192.168.1.105,
+2024-01-15 10:42:00,ERROR,API rate limit exceeded,api_user,10.0.0.1,
+2024-01-15 10:45:00,INFO,Sync completed,joao.santos,192.168.1.100,AA:BB:CC:DD:EE:FF

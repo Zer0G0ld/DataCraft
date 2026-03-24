@@ -1,0 +1,78 @@
+{
+  "company": "TechCorp",
+  "version": "2.0",
+  "departments": [
+    {
+      "name": "Engineering",
+      "manager": "Alice Silva",
+      "employees": [
+        {
+          "id": 101,
+          "name": "João Santos",
+          "role": "Senior Developer",
+          "skills": ["Python", "JavaScript", "SQL"],
+          "contact": {
+            "email": "joao.santos@techcorp.com",
+            "phone": "(11) 98765-4321",
+            "mac": "AA:BB:CC:DD:EE:FF"
+          }
+        },
+        {
+          "id": 102,
+          "name": "Maria Oliveira",
+          "role": "Tech Lead",
+          "skills": ["Python", "AWS", "Docker", "Kubernetes"],
+          "contact": {
+            "email": "maria.oliveira@techcorp.com",
+            "phone": "(11) 91234-5678",
+            "mac": "11:22:33:44:55:66"
+          }
+        },
+        {
+          "id": 103,
+          "name": "Pedro Costa",
+          "role": "Junior Developer",
+          "skills": ["JavaScript", "React", "Node.js"],
+          "contact": {
+            "email": "pedro.costa@techcorp.com",
+            "phone": "(11) 99876-5432",
+            "mac": "77:88:99:AA:BB:CC"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sales",
+      "manager": "Carla Mendes",
+      "employees": [
+        {
+          "id": 201,
+          "name": "Roberto Alves",
+          "role": "Sales Representative",
+          "skills": ["Negotiation", "CRM", "Communication"],
+          "contact": {
+            "email": "roberto.alves@techcorp.com",
+            "phone": "(11) 96543-2109",
+            "mac": "DD:EE:FF:00:11:22"
+          }
+        },
+        {
+          "id": 202,
+          "name": "Fernanda Lima",
+          "role": "Sales Manager",
+          "skills": ["Leadership", "Strategy", "Analytics"],
+          "contact": {
+            "email": "fernanda.lima@techcorp.com",
+            "phone": "(11) 95432-1098",
+            "mac": "33:44:55:66:77:88"
+          }
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "total_employees": 5,
+    "total_departments": 2,
+    "locations": ["São Paulo", "Rio de Janeiro", "Belo Horizonte"]
+  }
+}
