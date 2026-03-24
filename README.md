@@ -14,7 +14,7 @@
 [![Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://microsoft.com/windows)
 [![Downloads](https://img.shields.io/github/downloads/Zer0G0ld/DataCraft/total.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
 
-![DataCraft Screenshot](screenshot.png)
+![DataCraft Screenshot](img/DataCraft.PNG)
 
 ## ✨ Características
 
