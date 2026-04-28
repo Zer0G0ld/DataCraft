@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company version="2.0">
+  <name>TechCorp</name>
+  <departments>
+    <department>
+      <name>Engineering</name>
+      <manager>Alice Silva</manager>
+      <employees>
+        <employee>
+          <id>101</id>
+          <name>João Santos</name>
+          <role>Senior Developer</role>
+          <skills>
+            <skill>Python</skill>
+            <skill>JavaScript</skill>
+            <skill>SQL</skill>
+          </skills>
+          <contact>
+            <email>joao.santos@techcorp.com</email>
+            <phone>(11) 98765-4321</phone>
+            <mac>AA:BB:CC:DD:EE:FF</mac>
+          </contact>
+        </employee>
+        <employee>
+          <id>102</id>
+          <name>Maria Oliveira</name>
+          <role>Tech Lead</role>
+          <skills>
+            <skill>Python</skill>
+            <skill>AWS</skill>
+            <skill>Docker</skill>
+            <skill>Kubernetes</skill>
+          </skills>
+          <contact>
+            <email>maria.oliveira@techcorp.com</email>
+            <phone>(11) 91234-5678</phone>
+            <mac>11:22:33:44:55:66</mac>
+          </contact>
+        </employee>
+        <employee>
+          <id>103</id>
+          <name>Pedro Costa</name>
+          <role>Junior Developer</role>
+          <skills>
+            <skill>JavaScript</skill>
+            <skill>React</skill>
+            <skill>Node.js</skill>
+          </skills>
+          <contact>
+            <email>pedro.costa@techcorp.com</email>
+            <phone>(11) 99876-5432</phone>
+            <mac>77:88:99:AA:BB:CC</mac>
+          </contact>
+        </employee>
+      </employees>
+    </department>
+    <department>
+      <name>Sales</name>
+      <manager>Carla Mendes</manager>
+      <employees>
+        <employee>
+          <id>201</id>
+          <name>Roberto Alves</name>
+          <role>Sales Representative</role>
+          <skills>
+            <skill>Negotiation</skill>
+            <skill>CRM</skill>
+            <skill>Communication</skill>
+          </skills>
+          <contact>
+            <email>roberto.alves@techcorp.com</email>
+            <phone>(11) 96543-2109</phone>
+            <mac>DD:EE:FF:00:11:22</mac>
+          </contact>
+        </employee>
+        <employee>
+          <id>202</id>
+          <name>Fernanda Lima</name>
+          <role>Sales Manager</role>
+          <skills>
+            <skill>Leadership</skill>
+            <skill>Strategy</skill>
+            <skill>Analytics</skill>
+          </skills>
+          <contact>
+            <email>fernanda.lima@techcorp.com</email>
+            <phone>(11) 95432-1098</phone>
+            <mac>33:44:55:66:77:88</mac>
+          </contact>
+        </employee>
+      </employees>
+    </department>
+  </departments>
+  <metrics>
+    <total_employees>5</total_employees>
+    <total_departments>2</total_departments>
+    <locations>
+      <location>São Paulo</location>
+      <location>Rio de Janeiro</location>
+      <location>Belo Horizonte</location>
+    </locations>
+  </metrics>
+</company>
