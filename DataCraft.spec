@@ -1,3 +1,4 @@
+# DataCraft.spec
 # -*- mode: python ; coding: utf-8 -*-
 
 import os
@@ -12,11 +13,12 @@ if os.path.exists(venv_site_packages):
     sys.path.insert(0, venv_site_packages)
 
 a = Analysis(
-    ['main.py'],  # <--- MUDAR para o nome do seu arquivo principal
+    ['DataCraft.py'],  # Seu arquivo principal (pode ser DataCraft.py ou main.py)
     pathex=[],
     binaries=[],
     datas=[
-        ('voto.ico', '.'),  # Inclui o ícone no executável
+        ('voto.ico', '.'),  # Ícone
+        ('README.md', '.'),  # Incluir README
     ],
     hiddenimports=[
         # Bibliotecas principais
@@ -27,6 +29,12 @@ a = Analysis(
         'datetime',
         'threading',
         'tkinter',
+        'json',
+        'csv',
+        'yaml',
+        'sqlalchemy',
+        'markdown',
+        'jinja2',
         
         # Dependências do pandas
         'numpy',
@@ -68,9 +76,44 @@ a = Analysis(
         'pandas._libs.parsers',
         'pandas._libs.reshape',
         
+        # Módulos do DataCraft
+        'core',
+        'core.engine',
+        'core.reader_factory',
+        'core.writer_factory',
+        'readers',
+        'readers.base_reader',
+        'readers.xml_reader',
+        'readers.json_reader',
+        'readers.csv_reader',
+        'readers.yaml_reader',
+        'readers.excel_reader',
+        'readers.sql_reader',
+        'readers.parquet_reader',
+        'writers',
+        'writers.base_writer',
+        'writers.excel_writer',
+        'writers.json_writer',
+        'writers.csv_writer',
+        'writers.html_writer',
+        'writers.markdown_writer',
+        'writers.sql_writer',
+        'writers.parquet_writer',
+        'transformers',
+        'transformers.flatten',
+        'transformers.mapper',
+        'transformers.aggregator',
+        'gui',
+        'gui.main_window',
+        'gui.mapper_dialog',
+        'gui.batch_processor',
+        
         # Outras dependências
         'six',
-        'sqlite3'
+        'sqlite3',
+        'pathlib',
+        'typing',
+        'abc'
     ],
     hookspath=[],
     hooksconfig={},
@@ -87,7 +130,9 @@ a = Analysis(
         'jupyter',
         'notebook',
         'pytest',
-        'virtualenv'
+        'virtualenv',
+        'tkinter.test',
+        'unittest'
     ],
     noarchive=False,
 )
@@ -100,23 +145,24 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='DataCraft',  # <--- MUDAR para o nome do seu app
+    name='DataCraft',
     debug=False,
     bootloader_ignore_signals=False,
-    strip=False,  # False para evitar warnings
-    upx=False,    # False se não tiver UPX
+    strip=False,
+    upx=False,  # Mude para True se tiver UPX instalado
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,  # False = GUI mode
+    console=False,  # False = sem console (recomendado)
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='voto.ico'  # Seu ícone
+    icon='voto.ico'
 )
 
-# Opcional: Gerar uma pasta com vários arquivos (descomente se preferir)
+# Se quiser gerar uma pasta com vários arquivos (mais rápido para iniciar)
+# Descomente abaixo:
 # coll = COLLECT(
 #     exe,
 #     a.binaries,
