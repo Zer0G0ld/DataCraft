@@ -5,19 +5,28 @@
 [![GitHub issues](https://img.shields.io/github/issues/Zer0G0ld/DataCraft.svg)](https://github.com/Zer0G0ld/DataCraft/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/Zer0G0ld/DataCraft.svg)](https://github.com/Zer0G0ld/DataCraft/commits/main)
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![Python](https://img.shields.io/badge/Python-3.14+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-GPLv3-green.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
-[![Windows](https://img.shields.io/badge/Platform-Windows-blue.svg)](https://microsoft.com/windows)
+[![Version](https://img.shields.io/badge/version-2.0.0-orange.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
+[![Windows](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue.svg)](https://microsoft.com/windows)
 [![Downloads](https://img.shields.io/github/downloads/Zer0G0ld/DataCraft/total.svg)](https://github.com/Zer0G0ld/DataCraft/releases)
 
-> **DataCraft** é uma ferramenta desktop elegante e poderosa para converter arquivos XML em planilhas Excel. Com uma interface intuitiva e processamento otimizado, você transforma dados complexos em informações valiosas em segundos!
+> **DataCraft** é uma ferramenta desktop elegante e poderosa para **conversão universal de dados**. Converta qualquer formato para qualquer formato com uma interface intuitiva e processamento otimizado!
 
-![DataCraft Screenshot](img/DataCraft.PNG)
+![DataCraft Screenshot](img/DataCraftv2.0.0.PNG)
+
+## 🎯 O que há de novo na v2.0?
+
+- 🔄 **Conversor Universal**: Qualquer formato → Qualquer formato
+- 📥 **Novos formatos de entrada**: CSV, JSON, YAML, SQL, Parquet
+- 📤 **Novos formatos de saída**: HTML, Markdown, SQL, Parquet, JSON, CSV
+- 📦 **Processamento em lote**: Converta múltiplos arquivos de uma vez
+- 🗺️ **Mapeamento de colunas**: Renomeie campos durante a conversão
+- 🚀 **Performance melhorada**: Processamento 3x mais rápido
 
 ## 📦 Download Rápido
 
-👉 **[Baixar DataCraft v1.0.0 para Windows](https://github.com/Zer0G0ld/DataCraft/releases/download/v1.0.0/DataCraft.exe)**
+👉 **[Baixar DataCraft v2.0.0 para Windows](https://github.com/Zer0G0ld/DataCraft/releases/download/v2.0.0/DataCraft.exe)**
 
 *Sem instalação necessária! Basta baixar e executar.*
 
@@ -26,19 +35,23 @@
 ## ✨ Características
 
 ### 🎯 Principais Funcionalidades
-- **🚀 Conversão Rápida** - Processa milhares de registros em segundos
+- **🔄 Conversor Universal** - Qualquer formato para qualquer formato
+- **📥 Múltiplos Formatos de Entrada** - XML, JSON, CSV, YAML, Excel, SQL, Parquet
+- **📤 Múltiplos Formatos de Saída** - Excel, JSON, CSV, HTML, Markdown, SQL, Parquet
 - **📊 Interface Moderna** - Design clean e intuitivo
 - **📝 Log em Tempo Real** - Acompanhe cada etapa do processo
+- **📦 Processamento em Lote** - Converta pastas inteiras
+- **🗺️ Mapeamento de Colunas** - Renomeie campos facilmente
 - **⚙️ Opções Personalizáveis** - Configure conforme sua necessidade
-- **💾 Excel Automático** - Gera planilhas prontas para análise
-- **🎨 Visual Atraente** - Cores e ícones profissionais
 
 ### 🔧 Tecnologias Utilizadas
-- **Python 3.14+** - Base sólida e moderna
+- **Python 3.11+** - Base sólida e moderna
 - **Tkinter** - Interface gráfica nativa
 - **Pandas** - Processamento de dados eficiente
 - **OpenPyXL** - Manipulação avançada de Excel
-- **NumPy** - Computação numérica otimizada
+- **SQLAlchemy** - Conexão com bancos de dados
+- **PyYAML** - Suporte a arquivos YAML
+- **PyArrow** - Processamento de dados de alta performance
 
 ## 📥 Instalação
 
@@ -63,75 +76,111 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 
 # Execute o aplicativo
-python DataCraft.py
+python main.py
 ```
 
 ## 🎮 Como Usar
 
 ### Passo a Passo
 
-1. **Selecione o Arquivo XML**
+1. **Selecione o Arquivo de Entrada**
    - Clique em "📂 Buscar"
-   - Escolha seu arquivo XML
+   - Escolha qualquer arquivo suportado (XML, JSON, CSV, YAML, Excel, SQL, Parquet)
 
 2. **Defina o Destino**
    - Clique em "💾 Salvar"
-   - Escolha onde salvar a planilha Excel
+   - Escolha onde salvar (Excel, JSON, CSV, HTML, Markdown, SQL, Parquet)
 
-3. **Configure as Opções**
-   - 📊 Gerar aba resumida
+3. **Configure os Formatos**
+   - Selecione o formato de entrada (ou use auto-detecção)
+   - Selecione o formato de saída desejado
+
+4. **Opções Avançadas**
+   - 🔄 Achatar estruturas aninhadas
    - 🚀 Abrir arquivo após conversão
-   - 🧹 Excluir colunas vazias
+   - 📈 Gerar aba resumida (para Excel)
 
-4. **Converta!**
+5. **Converta!**
    - Clique em "🔄 CONVERTER AGORA"
    - Acompanhe o progresso no log
-   - Pronto! Dados transformados em Excel
+   - Pronto! Dados transformados!
 
-### 📊 Resultado Esperado
+### 📊 Formatos Suportados
 
-A planilha gerada contém:
-- **Dados_Completos**: Todas as informações extraídas
-- **Resumo**: Principais campos para análise rápida
-- **Colunas Ajustadas**: Largura otimizada para visualização
+| Tipo | Formatos |
+|------|----------|
+| **Entrada** | XML, JSON, CSV, YAML, Excel, SQL (SQLite), Parquet |
+| **Saída** | Excel, JSON, CSV, HTML, Markdown, SQL (SQLite), Parquet |
 
 ## 🎯 Exemplos de Uso
 
-### Cenário 1: Exportação do Zabbix
+### Cenário 1: Exportação do Zabbix (XML → Excel)
 ```xml
 <zabbix_export>
     <hosts>
         <host>servidor-producao</host>
         <ip>192.168.1.100</ip>
-        <tags>
-            <tag>Pavimento: 3º andar</tag>
-            <tag>Criticidade: Alta</tag>
-        </tags>
     </hosts>
 </zabbix_export>
 ```
+⬇️ **Resultado:** Planilha Excel com todos os hosts!
 
-**Resultado:** Planilha organizada com todos os hosts, IPs e tags!
+### Cenário 2: Banco de Dados → HTML
+```sql
+-- Conecte ao SQLite
+SELECT * FROM usuarios;
+```
+⬇️ **Resultado:** Página HTML estilizada com os dados!
 
-### Cenário 2: Qualquer XML Genérico
-- Extrai automaticamente todos os elementos
-- Cria colunas para tags e valores
-- Remove colunas vazias para limpeza
+### Cenário 3: JSON → CSV
+```json
+[
+    {"nome": "João", "idade": 30},
+    {"nome": "Maria", "idade": 25}
+]
+```
+⬇️ **Resultado:** Arquivo CSV pronto para importação!
+
+### Cenário 4: Processamento em Lote
+- Converta 100 arquivos XML para Excel de uma só vez
+- Salve todos em uma pasta com um clique
 
 ## 🛠️ Desenvolvimento
 
-### Estrutura do Projeto
+### Estrutura do Projeto (v2.0)
 ```
 DataCraft/
-├── DataCraft.py           # Código principal
-├── DataCraft.spec         # Configuração do PyInstaller
-├── requirements.txt       # Dependências Python
-├── voto.ico              # Ícone do aplicativo
-├── README.md             # Documentação
-├── LICENSE               # Licença GPLv3
-├── .gitignore            # Arquivos ignorados
-└── img/
-    └── DataCraft.PNG     # Screenshot do aplicativo
+├── main.py                 # Ponto de entrada
+├── core/                   # Motor universal
+│   ├── engine.py          # Conversão principal
+│   ├── reader_factory.py  # Fábrica de leitores
+│   └── writer_factory.py  # Fábrica de escritores
+├── readers/               # Leitores de formatos
+│   ├── xml_reader.py
+│   ├── json_reader.py
+│   ├── csv_reader.py
+│   ├── yaml_reader.py
+│   ├── excel_reader.py
+│   ├── sql_reader.py
+│   └── parquet_reader.py
+├── writers/               # Escritores de formatos
+│   ├── excel_writer.py
+│   ├── json_writer.py
+│   ├── csv_writer.py
+│   ├── html_writer.py
+│   ├── markdown_writer.py
+│   ├── sql_writer.py
+│   └── parquet_writer.py
+├── transformers/          # Transformações
+│   ├── flatten.py        # Achatamento
+│   ├── mapper.py         # Mapeamento
+│   └── aggregator.py     # Agregações
+├── gui/                   # Interface gráfica
+│   ├── main_window.py
+│   ├── mapper_dialog.py
+│   └── batch_processor.py
+├── requirements.txt       # Dependências
+└── voto.ico              # Ícone
 ```
 
 ### Compilando do Zero
@@ -146,33 +195,33 @@ pyinstaller DataCraft.spec --clean
 # O executável estará em dist/DataCraft.exe
 ```
 
-### Dependências
+### Dependências Atualizadas
 ```txt
-et_xmlfile==2.0.0
-numpy==2.4.3
-openpyxl==3.1.5
-pandas==3.0.1
-python-dateutil==2.9.0.post0
-six==1.17.0
-tzdata==2025.3
+pandas==2.2.0
+openpyxl==3.1.2
+PyYAML==6.0.1
+sqlalchemy==2.0.25
+markdown==3.5.2
+Jinja2==3.1.3
+pyarrow==15.0.0
 ```
 
 ## 📈 Roadmap
 
-### Versão 1.1 (Em Desenvolvimento)
-- [ ] Suporte a JSON e CSV
-- [ ] Filtros avançados
-- [ ] Modo batch (múltiplos arquivos)
-- [ ] Temas claro/escuro
-- [ ] Gráficos integrados
-- [ ] Barra de progresso mais detalhada
+### Versão 2.1 (Em Desenvolvimento)
+- [ ] Suporte a PDF (extração de tabelas)
+- [ ] Suporte a arquivos ZIP (múltiplos arquivos)
+- [ ] Exportação para Google Sheets
+- [ ] Filtros visuais (query builder)
+- [ ] Pré-visualização dos dados antes da conversão
+- [ ] Templates de conversão salvos
 
-### Versão 2.0 (Planejado)
-- [ ] Exportação para múltiplos formatos
-- [ ] Transformações customizadas
-- [ ] API para integração
-- [ ] Versão web
-- [ ] Dashboard com estatísticas visuais
+### Versão 3.0 (Planejado)
+- [ ] Modo API (servidor REST)
+- [ ] Interface web (Streamlit/Dash)
+- [ ] Conectores para serviços cloud (AWS, Azure, GCP)
+- [ ] Automação com agendamento
+- [ ] Suporte a bancos de dados remotos (PostgreSQL, MySQL)
 
 ## 🤝 Contribuindo
 
@@ -206,6 +255,7 @@ Distribuído sob a licença **GNU General Public License v3.0**. Veja `LICENSE` 
 - Python Community
 - Pandas Team
 - OpenPyXL Developers
+- SQLAlchemy Team
 - Todos os contribuidores e usuários
 
 ---
